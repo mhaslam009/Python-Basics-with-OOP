@@ -1,0 +1,39 @@
+Grades Calculator:
+Create a program that takes a list of student names and their scores as input.
+Calculate and print the grades for each student based on the following criteria:
+A (90-100), B (80-89), C (70-79), D (60-69), F (below 60).
+
+Even and Odd Lists:
+
+Write a program that takes a list of numbers as input.
+Separate the even and odd numbers into two different lists and print both lists.
+
+Vowel Counter:
+Develop a program that takes a string as input and counts the occurrences of each vowel (a, e, i, o, u) in the string. Print the counts for each vowel.
+
+Unique Elements:
+Write a program that takes a list as input and removes duplicates to create a new list containing only unique elements. Print the new list.
+
+Shopping Cart:
+Create a dictionary representing items in a shopping cart. Allow the user to add items, remove items, and calculate the total cost of the items in the cart.
+
+Factorial Function:
+Implement a function that calculates the factorial of a given number using a loop.
+
+Palindrome Checker:
+Write a function that checks if a given string is a palindrome (reads the same forwards and backwards).
+
+FizzBuzz:
+Write a program that prints numbers from 1 to 100. For multiples of 3, print "Fizz." For multiples of 5, print "Buzz." For numbers that are multiples of both 3 and 5, print "FizzBuzz."
+
+Word Frequency Counter:
+Create a program that takes a paragraph of text as input and counts the frequency of each word. Print the words and their frequencies in descending order.
+
+Contact Book:
+Implement a contact book using a dictionary. Allow the user to add contacts, search for contacts, and update contact information.
+
+Temperature Converter:
+Write a program that converts temperatures between Celsius and Fahrenheit based on user input.
+
+Number Guessing Game:
+Create a game where the program generates a random number and the user has to guess it. Provide hints if the guess is too high or too low.

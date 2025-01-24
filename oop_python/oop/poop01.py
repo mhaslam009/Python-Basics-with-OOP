@@ -1,0 +1,72 @@
+class My_class_04:  # class
+    discount = 0.7  # class attribute
+    list_of_objects = []
+
+    def __init__(self, name: str, price: float, quantity: int):
+        # validate recieving arguments
+        assert price >= 0, f"{price} is lower than 0 "
+        assert quantity >= 0, f"{quantity} is lower than 0 "
+        #objects
+        self.name = name
+        self.price = price
+        self.quantity = quantity
+
+        # saving objects to list_of_objects
+        My_class_04.list_of_objects.append(self)
+
+    def calculation(self):
+        return self.price * self.quantity
+
+    def discounting(self):
+        self.price = self.price * self.discount
+
+    def __repr__(self):
+        return f"object('{self.name}',{self.price},{self.quantity})"
+
+
+# objects craeted
+entry_01 = My_class_04("Iphone", 10000, 10)
+entry_02 = My_class_04("Iphone", 200, 200)
+entry_03 = My_class_04("Iphone", 20, 2000)
+entry_04 = My_class_04("Iphone", 600, 4)
+entry_05 = My_class_04("Iphone", 0, 100000)
+
+# access attributes
+print(entry_01.name)
+print(entry_02.price)
+print(entry_03.quantity)
+print("_______________")
+
+# access methods
+print(entry_01.calculation())
+print(entry_04.calculation())
+print("_______________")
+
+print(entry_01.price)
+# access class attribute->discount() method
+entry_01.discounting()  # it changes the price of entry_01
+print(entry_01.price)  # extract the attribute which have gone through a change
+# entry_01 price has changed
+print(entry_02.price)
+# entry_02 price have not changed because we didnt apply discounting method
+
+print("_________________")
+print(entry_04.price)
+# overriding the class attribute which is discount variable then using discounting() method
+entry_04.discount = 0.5  # 50% discount overriding class attribute discount variable
+entry_04.discounting()
+print(entry_04.price)
+print("____________________")
+
+# access list of objects
+print(My_class_04.list_of_objects)
+# access attribute from object
+
+# print(My_class_04.list_of_objects.name)
+# failed
+
+# again access attribute from a list of object
+for i in My_class_04.list_of_objects:
+    print(i.name)  # name attribute from objects list
+    print(i.quantity)  # quantity object from a list of objects
+    print("_____________")
